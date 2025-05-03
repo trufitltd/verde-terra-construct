@@ -26,8 +26,12 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2 text-white">
-          <Building size={32} className="text-armygreen" />
-          <span className="text-xl font-bold">VERDE TERRA</span>
+          <img 
+            src="/lovable-uploads/80743873-4df1-4fce-80b8-0f9690a4053f.png" 
+            alt="Trufit Limited" 
+            className="h-10" 
+          />
+          <span className="text-xl font-bold">TRUFIT LIMITED</span>
         </a>
 
         {/* Desktop Navigation */}

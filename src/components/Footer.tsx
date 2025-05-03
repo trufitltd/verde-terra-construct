@@ -8,8 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-5">
-              <Building className="text-armygreen h-8 w-8" />
-              <h3 className="text-xl font-bold text-white">VERDE TERRA</h3>
+              <img 
+                src="/lovable-uploads/80743873-4df1-4fce-80b8-0f9690a4053f.png" 
+                alt="Trufit Limited" 
+                className="h-10" 
+              />
+              <h3 className="text-xl font-bold text-white">TRUFIT LIMITED</h3>
             </div>
             <p className="text-gray-400 mb-6">
               Building a sustainable future through innovation, quality, and dedication to excellence in all our projects.
@@ -61,7 +65,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Verde Terra Construction & Engineering. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Trufit Limited. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

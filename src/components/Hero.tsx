@@ -12,7 +12,7 @@ const Hero = () => {
           <span className="text-white"> With Strength Today</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl">
-          Premier construction and engineering solutions for infrastructure, energy, healthcare, and mining projects worldwide.
+          Trufit Limited: Premier construction and engineering solutions for infrastructure, energy, healthcare, and mining projects worldwide.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button className="bg-armygreen hover:bg-armygreen-light text-white px-8 py-6 text-lg">
