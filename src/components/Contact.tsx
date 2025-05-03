@@ -51,7 +51,7 @@ const Contact = () => {
                   <MapPin className="text-armygreen h-6 w-6 mt-1 mr-4" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Our Location</h4>
-                    <p className="text-gray-400">123 Construction Avenue, Engineering District, Global City 10001</p>
+                    <p className="text-gray-400">No 12 Umaru Dikko Street, Off Ebitu Ikiwe Street, Jabi, Abuja</p>
                   </div>
                 </div>
                 
@@ -59,7 +59,8 @@ const Contact = () => {
                   <Phone className="text-armygreen h-6 w-6 mt-1 mr-4" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Call Us</h4>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">+234 703 364 3027</p>
+                    <p className="text-gray-400">+234 803 389 6895</p>
                   </div>
                 </div>
                 
@@ -67,7 +68,7 @@ const Contact = () => {
                   <Mail className="text-armygreen h-6 w-6 mt-1 mr-4" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email Us</h4>
-                    <p className="text-gray-400">info@verdeterra.com</p>
+                    <p className="text-gray-400">limitedtrufit@gmail.com</p>
                   </div>
                 </div>
                 
@@ -86,7 +87,7 @@ const Contact = () => {
                   {['facebook', 'twitter', 'linkedin', 'instagram'].map(social => (
                     <a 
                       key={social}
-                      href="#" 
+                      href={`https://${social}.com/trufitlimited`} 
                       className="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-gray-400 hover:bg-armygreen hover:text-white transition-all"
                     >
                       <span className="sr-only">{social}</span>

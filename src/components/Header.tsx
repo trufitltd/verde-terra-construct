@@ -36,13 +36,19 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 text-sm">
-          {['Home', 'Services', 'About', 'Projects', 'Contact'].map((item) => (
+          {[
+            { name: 'Home', link: '#home' },
+            { name: 'Services', link: '#services' },
+            { name: 'About', link: '#about' },
+            { name: 'Projects', link: '#projects' },
+            { name: 'Contact', link: '#contact' }
+          ].map((item) => (
             <a 
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.name}
+              href={item.link}
               className="text-white hover:text-armygreen transition-colors"
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </nav>
@@ -50,6 +56,7 @@ const Header = () => {
         <Button 
           variant="outline" 
           className="hidden md:flex border-armygreen text-white hover:bg-armygreen"
+          onClick={() => window.location.href = '#contact'}
         >
           Get a Quote
         </Button>
@@ -68,19 +75,29 @@ const Header = () => {
         <div className="md:hidden bg-charcoal-dark absolute w-full py-4 shadow-md animate-fade-in">
           <div className="container mx-auto px-4">
             <div className="flex flex-col space-y-4">
-              {['Home', 'Services', 'About', 'Projects', 'Contact'].map((item) => (
+              {[
+                { name: 'Home', link: '#home' },
+                { name: 'Services', link: '#services' },
+                { name: 'About', link: '#about' },
+                { name: 'Projects', link: '#projects' },
+                { name: 'Contact', link: '#contact' }
+              ].map((item) => (
                 <a 
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-white hover:text-armygreen transition-colors py-2"
+                  key={item.name}
+                  href={item.link}
+                  className="text-gray-400 hover:text-armygreen transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {item}
+                  {item.name}
                 </a>
               ))}
               <Button 
                 variant="outline" 
                 className="w-full border-armygreen text-white hover:bg-armygreen"
+                onClick={() => {
+                  window.location.href = '#contact';
+                  setMobileMenuOpen(false);
+                }}
               >
                 Get a Quote
               </Button>

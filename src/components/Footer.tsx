@@ -23,10 +23,17 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold text-lg mb-5">Quick Links</h3>
             <ul className="space-y-3">
-              {['About Us', 'Services', 'Projects', 'Careers', 'News & Updates', 'Contact Us'].map((link, index) => (
+              {[
+                { name: 'About Us', link: '#about' }, 
+                { name: 'Services', link: '#services' }, 
+                { name: 'Projects', link: '#projects' }, 
+                { name: 'Careers', link: '#' }, 
+                { name: 'News & Updates', link: '#' }, 
+                { name: 'Contact Us', link: '#contact' }
+              ].map((link, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-armygreen transition-colors">
-                    {link}
+                  <a href={link.link} className="text-gray-400 hover:text-armygreen transition-colors">
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -36,10 +43,17 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold text-lg mb-5">Our Services</h3>
             <ul className="space-y-3">
-              {['Building Construction', 'Bridge Engineering', 'Dam Construction', 'Railway Systems', 'Mining Operations', 'Solar Installation'].map((service, index) => (
+              {[
+                { name: 'Building Construction', link: '#services' }, 
+                { name: 'Bridge Engineering', link: '#services' }, 
+                { name: 'Dam Construction', link: '#services' }, 
+                { name: 'Railway Systems', link: '#services' }, 
+                { name: 'Mining Operations', link: '#services' }, 
+                { name: 'Solar Installation', link: '#services' }
+              ].map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-armygreen transition-colors">
-                    {service}
+                  <a href={service.link} className="text-gray-400 hover:text-armygreen transition-colors">
+                    {service.name}
                   </a>
                 </li>
               ))}
