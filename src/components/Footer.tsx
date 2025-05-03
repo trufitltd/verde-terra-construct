@@ -1,7 +1,15 @@
 
-import { Building } from 'lucide-react';
+import { MapPin, Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-charcoal-dark pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -18,21 +26,46 @@ const Footer = () => {
             <p className="text-gray-400 mb-6">
               Building a sustainable future through innovation, quality, and dedication to excellence in all our projects.
             </p>
+            <div className="space-y-3">
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 text-armygreen mr-2 mt-1" />
+                <p className="text-gray-400">No 12 Umaru Dikko Street, Off Ebitu Ikiwe Street, Jabi, Abuja</p>
+              </div>
+              <div className="flex items-start">
+                <Mail className="h-5 w-5 text-armygreen mr-2 mt-1" />
+                <a href="mailto:limitedtrufit@gmail.com" className="text-gray-400 hover:text-armygreen">
+                  limitedtrufit@gmail.com
+                </a>
+              </div>
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 text-armygreen mr-2 mt-1" />
+                <div className="text-gray-400">
+                  <p>+234 703 364 3027</p>
+                  <p>+234 803 389 6895</p>
+                </div>
+              </div>
+            </div>
           </div>
           
           <div>
             <h3 className="text-white font-bold text-lg mb-5">Quick Links</h3>
             <ul className="space-y-3">
               {[
-                { name: 'About Us', link: '#about' }, 
-                { name: 'Services', link: '#services' }, 
-                { name: 'Projects', link: '#projects' }, 
-                { name: 'Careers', link: '#' }, 
-                { name: 'News & Updates', link: '#' }, 
-                { name: 'Contact Us', link: '#contact' }
+                { name: 'Home', link: '#home', onClick: () => scrollToSection('home') }, 
+                { name: 'About Us', link: '#about', onClick: () => scrollToSection('about') }, 
+                { name: 'Services', link: '#services', onClick: () => scrollToSection('services') }, 
+                { name: 'Projects', link: '#projects', onClick: () => scrollToSection('projects') }, 
+                { name: 'Contact Us', link: '#contact', onClick: () => scrollToSection('contact') }
               ].map((link, index) => (
                 <li key={index}>
-                  <a href={link.link} className="text-gray-400 hover:text-armygreen transition-colors">
+                  <a 
+                    href={link.link} 
+                    className="text-gray-400 hover:text-armygreen transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      link.onClick();
+                    }}
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -52,7 +85,14 @@ const Footer = () => {
                 { name: 'Solar Installation', link: '#services' }
               ].map((service, index) => (
                 <li key={index}>
-                  <a href={service.link} className="text-gray-400 hover:text-armygreen transition-colors">
+                  <a 
+                    href={service.link} 
+                    className="text-gray-400 hover:text-armygreen transition-colors"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection('services');
+                    }}
+                  >
                     {service.name}
                   </a>
                 </li>

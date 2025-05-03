@@ -12,7 +12,7 @@ const About = () => {
               <span className="text-gradient">About Trufit Limited</span>
             </h2>
             <p className="text-gray-300 mb-6">
-              Founded in 1998, Trufit Limited has grown to become a global leader in construction and engineering services. With operations in over 50 countries, we bring unmatched expertise to every project we undertake.
+              Founded in 1998, Trufit Limited has grown to become a leading name in construction and engineering services in Nigeria. With operations across the country and expanding into West Africa, we bring unmatched expertise to every project we undertake.
             </p>
             <p className="text-gray-300 mb-8">
               Our mission is to build sustainable infrastructure that serves communities while preserving the environment. We employ over 1,000 dedicated professionals who share our commitment to excellence, innovation, and integrity.
@@ -32,8 +32,14 @@ const About = () => {
               ))}
             </div>
             
-            <Button className="bg-armygreen hover:bg-armygreen-light text-white">
-              Learn More About Us
+            <Button 
+              className="bg-armygreen hover:bg-armygreen-light text-white"
+              onClick={() => {
+                const servicesElement = document.getElementById('services');
+                if (servicesElement) servicesElement.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Explore Our Services
             </Button>
           </div>
 
