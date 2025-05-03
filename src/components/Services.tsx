@@ -1,5 +1,5 @@
 
-import { Building, Bridge, Dam, Rails, Mining, SolarPower, Hospital, Construction } from 'lucide-react';
+import { Building, Landmark, Building2, Hammer, Pickaxe, SunMedium, Stethoscope, HardHat } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
 const services = [
@@ -9,37 +9,37 @@ const services = [
     description: 'Commercial, residential, and industrial buildings constructed with precision and quality.'
   },
   {
-    icon: Bridge,
+    icon: Landmark,
     title: 'Bridge Engineering',
     description: 'Design and construction of durable bridges connecting communities and facilitating transportation.'
   },
   {
-    icon: Dam,
+    icon: Building2,
     title: 'Dam Construction',
     description: 'Specialized dam projects engineered for safety, efficiency, and environmental sustainability.'
   },
   {
-    icon: Rails,
+    icon: Hammer,
     title: 'Railway Systems',
     description: 'Comprehensive railway infrastructure development from planning to implementation.'
   },
   {
-    icon: Mining,
+    icon: Pickaxe,
     title: 'Mining Operations',
     description: 'Expert mining services with advanced technology and safety standards.'
   },
   {
-    icon: SolarPower,
+    icon: SunMedium,
     title: 'Solar Installation',
     description: 'Renewable energy solutions with cutting-edge solar power technology.'
   },
   {
-    icon: Hospital,
+    icon: Stethoscope,
     title: 'Healthcare Facilities',
     description: 'Specialized construction and management of modern healthcare facilities.'
   },
   {
-    icon: Construction,
+    icon: HardHat,
     title: 'Consulting Services',
     description: 'Strategic consulting for construction, infrastructure, and engineering projects.'
   }
