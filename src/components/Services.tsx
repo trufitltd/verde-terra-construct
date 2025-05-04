@@ -16,28 +16,28 @@ const services = [
     title: 'Bridge Engineering',
     description: 'Design and construction of durable bridges connecting communities and facilitating transportation.',
     details: 'Our bridge engineering team specializes in suspension bridges, cable-stayed bridges, arch bridges, and beam bridges. We handle everything from structural analysis and design to construction management and maintenance planning.',
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716"
+    image: "/assets/images/bridgeEng.jpg"
   },
   {
     icon: Building2,
     title: 'Dam Construction',
     description: 'Specialized dam projects engineered for safety, efficiency, and environmental sustainability.',
     details: 'We construct gravity dams, arch dams, and embankment dams with meticulous attention to hydraulic engineering principles. Our dam construction services include site investigation, design, construction, and post-construction monitoring.',
-    image: "https://images.unsplash.com/photo-1486325825272-29683ddd5971"
+    image: "/assets/images/damConstruction.jpg"
   },
   {
     icon: Hammer,
     title: 'Railway Systems',
     description: 'Comprehensive railway infrastructure development from planning to implementation.',
     details: 'Our railway systems division handles track construction, signaling systems, electrification, station construction, and maintenance facilities. We build high-speed railways, metro systems, and conventional rail networks.',
-    image: "https://images.unsplash.com/photo-1555644896-2cca99a69ce7"
+    image: "/assets/images/railwaySyst.jpg"
   },
   {
     icon: Pickaxe,
     title: 'Mining Operations',
     description: 'Expert mining services with advanced technology and safety standards.',
     details: 'Trufit Limited provides comprehensive mining services including site assessment, infrastructure development, mineral extraction, processing plant construction, and environmental rehabilitation. We specialize in both open-pit and underground mining operations.',
-    image: "https://images.unsplash.com/photo-1551146358-75136d2f8bf1"
+    image: "/assets/images/miningOps.jpg"
   },
   {
     icon: SunMedium,

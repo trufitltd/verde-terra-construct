@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -28,6 +27,29 @@ const Contact = () => {
     });
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
+
+  const socialLinks = [
+    { 
+      name: 'facebook',
+      icon: <Facebook className="h-5 w-5" />,
+      url: 'https://facebook.com/trufitlimited'
+    },
+    { 
+      name: 'twitter',
+      icon: <Twitter className="h-5 w-5" />,
+      url: 'https://twitter.com/trufitlimited'
+    },
+    { 
+      name: 'linkedin',
+      icon: <Linkedin className="h-5 w-5" />,
+      url: 'https://linkedin.com/company/trufitlimited'
+    },
+    { 
+      name: 'instagram',
+      icon: <Instagram className="h-5 w-5" />,
+      url: 'https://instagram.com/trufitlimited'
+    }
+  ];
 
   return (
     <section id="contact" className="py-20 bg-charcoal">
@@ -68,7 +90,7 @@ const Contact = () => {
                   <Mail className="text-armygreen h-6 w-6 mt-1 mr-4" />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email Us</h4>
-                    <p className="text-gray-400">limitedtrufit@gmail.com</p>
+                    <p className="text-gray-400">info@trufitltd.com</p>
                   </div>
                 </div>
                 
@@ -84,14 +106,16 @@ const Contact = () => {
               <div className="mt-10">
                 <h4 className="text-white font-semibold mb-3">Connect With Us</h4>
                 <div className="flex space-x-4">
-                  {['facebook', 'twitter', 'linkedin', 'instagram'].map(social => (
+                  {socialLinks.map((social) => (
                     <a 
-                      key={social}
-                      href={`https://${social}.com/trufitlimited`} 
+                      key={social.name}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-gray-400 hover:bg-armygreen hover:text-white transition-all"
+                      aria-label={social.name}
                     >
-                      <span className="sr-only">{social}</span>
-                      <div className="h-5 w-5">{/* Social icon would go here */}</div>
+                      {social.icon}
                     </a>
                   ))}
                 </div>

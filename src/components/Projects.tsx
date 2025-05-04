@@ -24,7 +24,7 @@ const projectsData = [
     location: 'Abuja, Nigeria',
     completionDate: 'January 2023',
     description: 'A 12-story modern office building featuring sustainable design elements and energy-efficient systems.',
-    image: 'https://images.unsplash.com/photo-1486325825272-29683ddd5971'
+    image: '/assets/images/modernOffice.jpg'
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projectsData = [
     location: 'Lagos, Nigeria',
     completionDate: 'March 2022',
     description: 'A 500-meter suspension bridge connecting two industrial zones and easing transportation.',
-    image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df'
+    image: '/assets/images/bridgeEng.jpg'
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const projectsData = [
     location: 'Kainji, Nigeria',
     completionDate: 'November 2021',
     description: 'A major dam project with hydroelectric power generation capacity of 150MW.',
-    image: 'https://images.unsplash.com/photo-1518032553888-29914859d773'
+    image: '/assets/images/hydro.jpg'
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const projectsData = [
     location: 'Jos, Nigeria',
     completionDate: 'May 2023',
     description: 'A comprehensive mining operation with processing facilities and environmental protection systems.',
-    image: 'https://images.unsplash.com/photo-1518435435493-daef2a1847a4'
+    image: '/assets/images/copperMining.jpg'
   },
   {
     id: 6,

@@ -33,8 +33,8 @@ const Footer = () => {
               </div>
               <div className="flex items-start">
                 <Mail className="h-5 w-5 text-armygreen mr-2 mt-1" />
-                <a href="mailto:limitedtrufit@gmail.com" className="text-gray-400 hover:text-armygreen">
-                  limitedtrufit@gmail.com
+                <a href="mailto:info@trufitltd.com" className="text-gray-400 hover:text-armygreen">
+                  info@trufitltd.com
                 </a>
               </div>
               <div className="flex items-start">
